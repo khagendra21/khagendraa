@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open in New Window Example</title>
+</head>
+<body>
+    <h1>Click a Link to Open Content in a New Window</h1>
+
+    <ul>
+        <li><a href="#" onclick="openInNewWindow('https://www.example.com'); return false;">Open Example.com</a></li>
+        <li><a href="#" onclick="openInNewWindow('https://www.wikipedia.org'); return false;">Open Wikipedia</a></li>
+        <li><a href="#" onclick="openInNewWindow('https://www.youtube.com'); return false;">Open YouTube</a></li>
+    </ul>
+
+    <script>
+        function openInNewWindow(url) {
+            // Open the URL in a new window/tab
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
